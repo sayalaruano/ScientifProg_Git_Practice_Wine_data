@@ -1,2 +1,9 @@
+.DS_Store
+**/.DS_Store
+*.asv
+*.pdf
+*.txt
+*.csv
+*.xlsx
 Wine.xlsx
 test_scaling.py
