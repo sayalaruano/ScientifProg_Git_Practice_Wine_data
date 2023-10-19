@@ -35,6 +35,12 @@ class VisualisationTool:
         ax2.scatter(loadings.iloc[:, plotted_components[0] - 1], loadings.iloc[:, plotted_components[1] - 1])
         ax1.set_title('PCA plot')
         ax2.set_title('PCA loadings')
+
+        xlabel = "PC" + str(plotted_components[0]) + " (" + str(round(explained_variance[plotted_components[0]-1], 4)) + ")"
+        ylabel = "PC" + str(plotted_components[1]) + " (" + str(round(explained_variance[plotted_components[1]-1], 4)) + ")"
+
+        ax1.set_xlabel(xlabel)
+        ax1.set_ylabel(ylabel)
         # show plot window
         plt.show()
         return
