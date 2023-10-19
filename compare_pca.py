@@ -23,7 +23,7 @@ def two_classes(wine_df, classes=[1,2]):
 	X_sel = X[indices]
 	
 	# all PCs
-	pca = PCA(centering=False)
+	pca = PCA()
 	X_new = pca.fit_transform(X_sel)
 
 	# convert series to string
