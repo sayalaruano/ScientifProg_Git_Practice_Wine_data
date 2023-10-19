@@ -26,4 +26,6 @@ def two_classes(wine_df, classes=[1,2]):
 	pca = PCA(centering=False)
 	X_new = pca.fit_transform(X_sel)
 
+	# convert series to string
+	labels = labels.astype(str)
 	return pca, X_new, labels
