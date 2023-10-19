@@ -1,7 +1,3 @@
-# If needed, before starting, change the current working directory by uncommenting and inserting the right path in the following line of code.
-import os
-os.chdir("/home/coder/projects/Scientific Programming")
-
 from data_formatting import *
 from Scaling import *
 from explore_PCA import *
