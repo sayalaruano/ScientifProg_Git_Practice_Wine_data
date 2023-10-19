@@ -26,8 +26,8 @@ def pca_plot(df):
         
         
     """
-    classes = df["classes"]
-    df = df.drop("classes", axis=1)
+    classes = df["Classes"]
+    df = df.drop("Classes", axis=1)
     pca = PCA()
     pca.fit(df)
     reduced_data = pd.DataFrame(pca.transform(df))
