@@ -1,7 +1,7 @@
 import pandas as pd
 
-def data_formatting(data):
-    data = pd.read_excel(data, header = None)
+def data_formatting(data_file):
+    data = pd.read_excel(data_file, header = None)
     class_1 = [1] * 59
     class_2 = [2] * 71
     class_3 = [3] * 48
